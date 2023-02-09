@@ -1,0 +1,337 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1366px;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+}
+/* animation-one style*/
+.animation-one {
+  display: flex;
+  justify-content: center;
+  gap: 7rem;
+  margin-top: 5rem;
+}
+.animation-one_box {
+  width: 400px;
+  height: 300px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px #333;
+}
+.animation-one_box1 {
+  background: rgb(104, 237, 217);
+  transition: 2s;
+}
+.animation-one_box2 {
+  background: rgb(77, 199, 222);
+  transition: 2s;
+}
+.animation-one_box3 {
+  background: rgb(71, 157, 218);
+  transition: 2s;
+}
+.animation-one_box1:hover {
+  transform: scale(0.1);
+}
+.animation-one_box2:hover {
+  transform: scale(1.4);
+}
+.animation-one_box3:hover {
+  transform: scale(0.3, 1.4);
+}
+/* animation-one style*/
+
+/* animation-two style*/
+.animation-two {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  margin-top: 5rem;
+}
+.animation-two_box {
+  width: 260px;
+  height: 180px;
+  background: rgb(138, 207, 234);
+  border-radius: 20px;
+}
+.animation-two_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 260px;
+  height: 180px;
+  transition: 2s;
+  border-radius: 20px;
+  background: rgb(13, 100, 239);
+  opacity: 0.5;
+  font-size: 2rem;
+  color: #fff;
+}
+.animation-two_box1:hover {
+  transform: scaleX(1.5);
+}
+.animation-two_box2:hover {
+  transform: scaleY(1.5);
+}
+.animation-two_box3:hover {
+  transform: scale(1.5);
+}
+.animation-two_box4:hover {
+  transform: translateX(40px);
+}
+.animation-two_box5:hover {
+  transform: translateY(40px);
+}
+.animation-two_box6:hover {
+  transform: translate(40px, 40px);
+}
+.animation-two_box7:hover {
+  transform: matrix(1, -0.7, 0, 1, 0, 0);
+}
+.animation-two_box8:hover {
+  transform: rotate(270deg);
+}
+.animation-two_box9:hover {
+  transform: skew(30deg, 30deg);
+}
+.animation-two_box10:hover {
+  transform: skewX(30deg);
+}
+.animation-two_box11:hover {
+  transform: skewY(30deg);
+}
+.animation-two_box12:hover {
+  transform: matrix(1, 1.2, 0, 1, 0, 0);
+}
+.animation-two_box13:hover {
+  transform: rotate3d(-1.2, -1.6, 1, 70deg);
+}
+.animation-two_box14:hover {
+  transform: rotate3d(0, 1, 0, -60deg);
+}
+.animation-two_box15:hover {
+  transform: rotate3d(1, 0, 0, 60deg);
+}
+.animation-two_box16:hover {
+  transform: rotate3d(1.3, 1, -1, -60deg);
+}
+/* animation-two  style*/
+
+/* animation-there style */
+.animation-there {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  background: rgb(42, 197, 103);
+  height: 70px;
+  margin-top: 5rem;
+}
+.animation-there_box {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  font-family: sans-serif;
+  list-style-type: none;
+  transition: all 2s;
+}
+.animation-there_box a {
+  font-size: 2rem;
+  font-weight: 400;
+  color: rgb(243, 234, 63);
+  transition: 2s;
+}
+.animation-there_box span {
+  display: inline-block;
+  width: 0;
+  height: 5px;
+  background-color: white;
+  transition: 2s;
+  border-radius: 10px;
+}
+.animation-there_box:hover a {
+  color: white;
+}
+.animation-there_box:hover span {
+  width: 100%;
+}
+/* animation-there style */
+
+/* animation-four */
+.animation-four {
+  position: relative;
+}
+.animation-four_cloud1 i,
+.animation-four_cloud2 i,
+.animation-four_sun,
+.animation-four_mountain1 i,
+.animation-four_mountain2 i,
+.animation-four_mountain3 i,
+.animation-four_cloud3 i {
+  position: absolute;
+  animation-iteration-count: infinite;
+  animation-duration: 12s;
+  animation-direction: alternate;
+  animation-timing-function: ease;
+}
+.animation-four_cloud1 i {
+  font-size: 10rem;
+  top: 27rem;
+  left: 0;
+  animation-name: cloud1;
+  z-index: 17;
+  color: #888;
+}
+.animation-four_cloud2 i {
+  font-size: 10rem;
+  position: absolute;
+  top: 25rem;
+  left: 60rem;
+  animation-name: cloud2;
+  z-index: 6;
+  color: #888;
+}
+.animation-four_cloud3 i {
+  font-size: 7rem;
+  position: absolute;
+  top: 25rem;
+  left: 60rem;
+  animation-name: cloud3;
+  animation-delay: 3s;
+  z-index: 5;
+  color: #888;
+}
+.animation-four_sun {
+  position: absolute;
+  left: 40rem;
+  top: 12rem;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background: rgba(236, 236, 21, 0.821);
+  animation-name: sun;
+  z-index: 1;
+}
+.animation-four_mountain1 i {
+  position: absolute;
+  font-size: 25rem;
+  top: 30rem;
+  left: 17rem;
+  z-index: 11;
+  color: rgb(25, 69, 105);
+}
+.animation-four_mountain2 i {
+  position: relative;
+  font-size: 20rem;
+  top: 34rem;
+  left: 30rem;
+  z-index: 10;
+  color: rgb(25, 69, 105);
+}
+.animation-four_mountain3 i {
+  position: absolute;
+  font-size: 25rem;
+  top: 30rem;
+  left: 38rem;
+  z-index: 9;
+  color: rgb(25, 69, 105);
+}
+@keyframes cloud1 {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 60rem;
+  }
+}
+@keyframes cloud2 {
+  0% {
+    left: 60rem;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes cloud3 {
+  0% {
+    left: 60rem;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes sun {
+  from {
+    top: 12rem;
+  }
+  to {
+    top: 40rem;
+    background: white;
+  }
+}
+/* animation-four */
+
+/* animation-five */
+.animation-five {
+  max-width: 1300px;
+  margin-top: 45rem;
+  margin-left: 30rem;
+  margin-bottom: 10rem;
+}
+.animation-five_hour {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  border: 20px solid rgb(40, 202, 234);
+}
+.animation-five_arrow {
+  position: relative;
+  top: 8rem;
+  left: 1rem;
+  width: 110px;
+  height: 10px;
+  border-radius: 10px;
+  background: rgb(40, 202, 234);
+  animation-name: arrow;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.animation-five_cercle1 {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 6.5rem;
+  top: -3rem;
+  border-radius: 50px;
+  border: 10px solid rgb(40, 202, 234);
+}
+.animation-five_cercle2 {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 6.5rem;
+  top: 7rem;
+  border-radius: 50px;
+  background: rgb(40, 202, 234);
+}
+@keyframes arrow {
+  0% {
+    transform-origin: right center;
+    transform: rotate(0deg);
+  }
+  100% {
+    transform-origin: right center;
+    transform: rotate(360deg);
+  }
+}
+.animation-five_hour:hover .animation-five_arrow {
+  animation-play-state: paused;
+}
+/* animation-five */
